@@ -1,6 +1,9 @@
 const createPayment = (ev) => {
     //prevent the page from reloading when the button is pressed
     ev.preventDefault();
+
+    //need to create control flow here for which radio button is highlighted
+    
 }
 
 let person = document.getElementById("who-from").value;
