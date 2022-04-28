@@ -9,6 +9,11 @@ const createPayment = (ev) => {
     for(i=0; i < incomeOrExpenditure.length; i++) {
         if(incomeOrExpenditure[i].checked) {
             console.log(incomeOrExpenditure[i].value);
+            if(incomeOrExpenditure.value === "income") {
+                console.log("red");
+            } else {
+                console.log("blue");
+            }
         }
     }
     //need to create control flow here for which radio button is highlighted
