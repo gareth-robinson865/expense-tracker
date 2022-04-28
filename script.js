@@ -13,13 +13,29 @@ const createPayment = (ev) => {
                 //variable to hold the income list where the new item will be appended to
                 let incomeArea = document.getElementById("incoming");
 
-                //create the h3 to hold the what for value
-                let title = document.createElement("h3")
+                //create a new list item to go into the unordered list
+                let newListItem = document.createElement("li");
+
+
+                //create the title element
+                let titleArea = document.createElement("h3")
                 //set the attribute for the element
-                title.setAttribute("id", "title");
+                titleArea.setAttribute("id", "title");
                 //get the value of the input
-                let workCompleted = document.getElementById("what-for").value;
-                console.log(workCompleted);
+                let title = document.getElementById("what-for").value;
+
+                
+                console.log(title);
+
+
+
+
+
+
+
+
+
+
                 console.log("red");
             } else {
                 console.log("blue");
