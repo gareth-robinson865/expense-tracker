@@ -19,3 +19,7 @@ let person = document.getElementById("who-from").value;
 let workCompleted = document.getElementById("what-for").value;
 
 //each created payment needs to have a reference
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('submit-btn').addEventListener('click', createPayment);
+})
