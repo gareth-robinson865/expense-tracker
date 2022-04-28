@@ -23,7 +23,10 @@ const createPayment = (ev) => {
                 titleArea.setAttribute("id", "title");
                 //get the value of the input
                 let title = document.getElementById("what-for").value;
-
+                //create text node to be appended to the h3 element;
+                let titleText = document.createTextNode(title);
+                //append text to element
+                titleArea.appendChild(titleText);
                 
                 console.log(title);
 
