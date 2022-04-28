@@ -27,7 +27,8 @@ const createPayment = (ev) => {
                 let titleText = document.createTextNode(title);
                 //append text to element
                 titleArea.appendChild(titleText);
-                
+                //append the title to the list item
+                newListItem.appendChild(titleArea);
                 console.log(title);
 
 
@@ -38,7 +39,8 @@ const createPayment = (ev) => {
 
 
 
-
+                //append the li element to the unordered list
+                incomeArea.appendChild(newListItem);
                 console.log("red");
             } else {
                 console.log("blue");
