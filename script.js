@@ -8,8 +8,10 @@ const createPayment = (ev) => {
     //for loop to check which radio button is selected
     for(i=0; i < incomeOrExpenditure.length; i++) {
         if(incomeOrExpenditure[i].checked) {
+            let value = incomeOrExpenditure[i].value;
+            console.log(value);
             console.log(incomeOrExpenditure[i].value);
-            if(incomeOrExpenditure.value === "income") {
+            if(value === "income") {
                 console.log("red");
             } else {
                 console.log("blue");
