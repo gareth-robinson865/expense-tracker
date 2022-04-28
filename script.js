@@ -6,7 +6,11 @@ const createPayment = (ev) => {
     let incomeOrExpenditure = document.forms[0];
 
     //for loop to check which radio button is selected
-
+    for(i=0; i < incomeOrExpenditure.length; i++) {
+        if(incomeOrExpenditure[i].checked) {
+            console.log(incomeOrExpenditure[i].value);
+        }
+    }
     //need to create control flow here for which radio button is highlighted
     
 }
