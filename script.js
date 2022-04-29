@@ -19,7 +19,7 @@ const createPayment = (ev) => {
              //set the attribute for the element
              titleArea.setAttribute("id", "title");
              //get the value of the input
-             let title = document.getElementById("what-for").value;
+             let title = document.getElementById("who-from").value;
              //create text node to be appended to the h3 element;
              let titleText = document.createTextNode(title);
              //append text to element
@@ -33,6 +33,10 @@ const createPayment = (ev) => {
              let descriptionArea = document.createElement("p");
 
              descriptionArea.setAttribute("id", "description");
+
+             let description = document.getElementById("what-for").value;
+
+             let descriptionText = document.createTextNode(description);
 
 
             if(value === "income") {
@@ -53,7 +57,7 @@ const createPayment = (ev) => {
     
 }
 
-let person = document.getElementById("who-from").value;
+
 
 
 //each created payment needs to have a reference
