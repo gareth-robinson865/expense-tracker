@@ -46,6 +46,8 @@ const createPayment = (ev) => {
              //create the element for the amount paid
             let amountArea = docuement.createElement("h5");
 
+            amountArea.setAttribute("id", "amount");
+
              let amount = document.getElementById("how-much");
 
 
