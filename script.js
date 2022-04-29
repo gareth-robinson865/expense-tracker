@@ -29,6 +29,11 @@ const createPayment = (ev) => {
              console.log(title);
 
 
+             //create the element for what it is for
+             let descriptionArea = document.createElement("p");
+
+             descriptionArea.setAttribute("id", "description");
+
 
             if(value === "income") {
                //variable to hold the income list where the new item will be appended to
