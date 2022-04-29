@@ -43,6 +43,11 @@ const createPayment = (ev) => {
              newListItem.appendChild(descriptionArea);
              console.log(description);
 
+             //create the element for the amount paid
+            let amountArea = docuement.createElement("h5");
+
+             let amount = document.getElementById("how-much");
+
 
             if(value === "income") {
                //variable to hold the income list where the new item will be appended to
