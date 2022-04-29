@@ -50,6 +50,8 @@ const createPayment = (ev) => {
 
              let amount = document.getElementById("how-much");
 
+             let amountText = document.createTextNode(amount);
+
 
             if(value === "income") {
                //variable to hold the income list where the new item will be appended to
