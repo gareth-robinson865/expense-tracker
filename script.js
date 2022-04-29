@@ -38,6 +38,8 @@ const createPayment = (ev) => {
 
              let descriptionText = document.createTextNode(description);
 
+             descriptionArea.appendChild(descriptionText);
+
 
             if(value === "income") {
                //variable to hold the income list where the new item will be appended to
