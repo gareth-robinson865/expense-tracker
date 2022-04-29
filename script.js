@@ -41,6 +41,7 @@ const createPayment = (ev) => {
              descriptionArea.appendChild(descriptionText);
 
              newListItem.appendChild(descriptionArea);
+             console.log(description);
 
 
             if(value === "income") {
