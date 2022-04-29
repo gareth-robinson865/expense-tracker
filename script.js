@@ -54,7 +54,7 @@ const createPayment = (ev) => {
 
              amountArea.appendChild(amountText);
 
-             
+             newListItem.appendChild(amountArea);
 
 
             if(value === "income") {
