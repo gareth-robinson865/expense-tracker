@@ -1,5 +1,6 @@
 let startingBalance = 0;
 let currentBalance = document.getElementById("current-balance");
+let numberOfReciepts = 0;
 
 const createPayment = (ev) => {
     //prevent the page from reloading when the button is pressed
@@ -37,7 +38,7 @@ const createPayment = (ev) => {
              console.log(description);
 
              //create the element for the amount paid
-            let amountArea = docuement.createElement("h5");
+            let amountArea = document.createElement("h5");
             amountArea.setAttribute("id", "amount");
             let amount = document.getElementById("how-much");
             let amountText = document.createTextNode(amount);
@@ -51,7 +52,7 @@ const createPayment = (ev) => {
                 console.log("red");
 
                 //update the current balance
-                
+                startingBalance += amount;
             } else {
                 let expenditureArea = document.getElementById("outgoing");
                 expenditureArea.appendChild(newListItem);
