@@ -40,7 +40,7 @@ const createPayment = (ev) => {
              //create the element for the amount paid
             let amountArea = document.createElement("h5");
             amountArea.setAttribute("id", "amount");
-            let amount = document.getElementById("how-much");
+            let amount = document.getElementById("how-much").value;
             let amountText = document.createTextNode(amount);
             amountArea.appendChild(amountText);
             newListItem.appendChild(amountArea);
