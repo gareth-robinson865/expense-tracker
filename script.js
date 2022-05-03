@@ -69,10 +69,6 @@ const createPayment = (ev) => {
         }
     }
 }
-
-
-
-
 //each created payment needs to have a reference
 
 document.addEventListener('DOMContentLoaded', () => {
