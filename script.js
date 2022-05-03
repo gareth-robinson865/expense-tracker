@@ -53,9 +53,6 @@ const createPayment = (ev) => {
             }
         }
     }
-    //need to create control flow here for which radio button is highlighted
-    //everything can happen outside of the control flow in terms of the creation of the element
-    
 }
 
 
