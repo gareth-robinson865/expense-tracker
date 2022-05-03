@@ -52,7 +52,9 @@ const createPayment = (ev) => {
                 console.log("red");
 
                 //update the current balance
-                startingBalance += amount;
+                let newAmount = parseInt(amount);
+                let updatedBalance = startingBalance += newAmount;
+                currentBalance.innerText = updatedBalance;
             } else {
                 let expenditureArea = document.getElementById("outgoing");
                 expenditureArea.appendChild(newListItem);
