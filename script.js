@@ -1,3 +1,5 @@
+let startingBalance = 0;
+
 const createPayment = (ev) => {
     //prevent the page from reloading when the button is pressed
     ev.preventDefault();
@@ -46,6 +48,8 @@ const createPayment = (ev) => {
                 let incomeArea = document.getElementById("incoming");
                 incomeArea.appendChild(newListItem);
                 console.log("red");
+
+                //update the current balance
             } else {
                 let expenditureArea = document.getElementById("outgoing");
                 expenditureArea.appendChild(newListItem);
