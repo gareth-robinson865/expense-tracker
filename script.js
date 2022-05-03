@@ -52,13 +52,19 @@ const createPayment = (ev) => {
                 console.log("red");
 
                 //update the current balance
-                let newAmount = parseInt(amount);
-                let updatedBalance = startingBalance += newAmount;
-                currentBalance.innerText = updatedBalance;
+                let addingAmount = parseInt(amount);
+                let additionBalance = startingBalance += addingAmount;
+                currentBalance.innerText = additionBalance;
             } else {
                 let expenditureArea = document.getElementById("outgoing");
                 expenditureArea.appendChild(newListItem);
                 console.log("blue");
+
+                //update the current balance
+                let minusAmount = parseInt(amount);
+                let minusBalance = startingBalance -= minusAmount;
+                currentBalance.innerText = minusBalance;
+
             }
         }
     }
