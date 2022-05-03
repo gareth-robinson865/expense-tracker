@@ -16,51 +16,34 @@ const createPayment = (ev) => {
 
              //create the title element
              let titleArea = document.createElement("h3")
-             //set the attribute for the element
              titleArea.setAttribute("id", "title");
-             //get the value of the input
              let title = document.getElementById("who-from").value;
-             //create text node to be appended to the h3 element;
              let titleText = document.createTextNode(title);
-             //append text to element
              titleArea.appendChild(titleText);
-             //append the title to the list item
              newListItem.appendChild(titleArea);
              console.log(title);
 
 
              //create the element for what it is for
              let descriptionArea = document.createElement("p");
-
              descriptionArea.setAttribute("id", "description");
-
              let description = document.getElementById("what-for").value;
-
              let descriptionText = document.createTextNode(description);
-
              descriptionArea.appendChild(descriptionText);
-
              newListItem.appendChild(descriptionArea);
              console.log(description);
 
              //create the element for the amount paid
             let amountArea = docuement.createElement("h5");
-
             amountArea.setAttribute("id", "amount");
-
             let amount = document.getElementById("how-much");
-
             let amountText = document.createTextNode(amount);
-
             amountArea.appendChild(amountText);
-
             newListItem.appendChild(amountArea);
             console.log(amount);
 
             if(value === "income") {
-               //variable to hold the income list where the new item will be appended to
                 let incomeArea = document.getElementById("incoming");
-                //append the li element to the unordered list
                 incomeArea.appendChild(newListItem);
                 console.log("red");
             } else {
