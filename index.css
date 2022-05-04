@@ -6,5 +6,5 @@ body {
     width: 80%;
     background-color: white;
     height: 100vh;
-
+    display: grid;
 }
