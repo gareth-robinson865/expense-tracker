@@ -44,4 +44,6 @@ body {
     grid-row: 4 / 5;
     grid-column: 1 / 4;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: .25fr 1.75fr;
 }
