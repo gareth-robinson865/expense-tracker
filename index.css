@@ -26,7 +26,11 @@ body {
 }
 
 #input {
+    border: 2px solid black;
     grid-row: 2 / 3;
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 #total-balance {
