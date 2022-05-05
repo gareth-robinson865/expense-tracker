@@ -54,3 +54,10 @@ body {
     display: flex;
     justify-content: center;
 }
+
+#expense-display {
+    grid-row: 2/ 3;
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: center;
+}
