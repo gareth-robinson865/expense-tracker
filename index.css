@@ -78,7 +78,9 @@ body {
 }
 
 .display-card {
-    
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 10px;;
 }
 
 .income-display {
