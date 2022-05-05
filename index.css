@@ -62,6 +62,10 @@ body {
     justify-content: center;
 }
 
+#incoming {
+    list-style-type: none;
+}
+
 #expense-display {
     grid-row: 2/ 3;
     grid-column: 3 / 4;
@@ -69,8 +73,12 @@ body {
     justify-content: center;
 }
 
-.display-card {
+#outgoing {
     list-style-type: none;
+}
+
+.display-card {
+    
 }
 
 .income-display {
