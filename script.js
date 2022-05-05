@@ -16,6 +16,7 @@ const createPayment = (ev) => {
              
              //create a new list item to go into the unordered list
              let newListItem = document.createElement("li");
+             newListItem.setAttribute("id", "payment"+numberOfReciepts);
 
 
              //create the title element
