@@ -17,7 +17,6 @@ const createPayment = (ev) => {
              //create a new list item to go into the unordered list
              let newListItem = document.createElement("li");
              newListItem.setAttribute("id", "payment"+numberOfReciepts);
-             newListItem.setAttribute("class", "display-card");
              numberOfReciepts++
 
 
@@ -50,7 +49,7 @@ const createPayment = (ev) => {
             console.log(amount);
 
             if(value === "income") {
-                newListItem.setAttribute("class", "income-display");
+                newListItem.setAttribute("class", "income-display display-card");
                 let incomeArea = document.getElementById("incoming");
                 incomeArea.appendChild(newListItem);
                 console.log("red");
@@ -60,7 +59,7 @@ const createPayment = (ev) => {
                 let additionBalance = startingBalance += addingAmount;
                 currentBalance.innerText = additionBalance;
             } else {
-                newListItem.setAttribute("class", "outgoing-display");
+                newListItem.setAttribute("class", "outgoing-display display-card");
                 let expenditureArea = document.getElementById("outgoing");
                 expenditureArea.appendChild(newListItem);
                 console.log("blue");
