@@ -73,7 +73,8 @@ const createPayment = (ev) => {
         }
     }
 }
-//each created payment needs to have a reference
+//each created payment needs to have a reference **done
+//maybe use a table instead of an unordered list, need to read up on using a table
 
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('submit-btn').addEventListener('click', createPayment);
