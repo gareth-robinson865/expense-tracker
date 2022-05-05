@@ -18,7 +18,6 @@ const createPayment = (ev) => {
              let newListItem = document.createElement("li");
              newListItem.setAttribute("id", "payment"+numberOfReciepts);
              numberOfReciepts++
-             console.log(numberOfReciepts);
 
 
              //create the title element
