@@ -60,6 +60,7 @@ body {
     grid-column: 1 / 2;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 #incoming {
@@ -71,10 +72,13 @@ body {
     grid-column: 3 / 4;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 #outgoing {
     list-style-type: none;
+    display: flex;
+    justify-content: center;
 }
 
 .display-card {
