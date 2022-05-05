@@ -70,7 +70,7 @@ body {
 }
 
 .display-card {
-
+    list-style-type: none;
 }
 
 .income-display {
