@@ -1,5 +1,6 @@
 body {
-    background-color: #0000ff;
+    justify-content: center;
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
 }
 
 #container {
