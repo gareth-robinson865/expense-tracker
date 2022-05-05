@@ -48,24 +48,19 @@ body {
     grid-template-rows: .25fr 1.75fr;
 }
 
-#income-display {
+#income-table {
     grid-row: 2 / 3;
     grid-column: 1 / 3;
-    display: flex;
-    justify-content: center;
+    
 }
 
 #incoming {
     list-style-type: none;
 }
 
-#expense-display {
+#outgoing-table {
     grid-row: 2/ 3;
     grid-column: 3 / 5;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
 }
 
 #outgoing {
