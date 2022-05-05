@@ -15,4 +15,5 @@ body {
     border-radius: 10px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: .25fr .75fr .25fr 2fr;
+    border: 2px solid black;
 }
