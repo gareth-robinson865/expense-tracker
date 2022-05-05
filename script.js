@@ -14,45 +14,29 @@ const createPayment = (ev) => {
         if(incomeOrExpenditure[i].checked) {
             let value = incomeOrExpenditure[i].value;
              
-             //create a new list item to go into the unordered list
-             let newListItem = document.createElement("li");
-             newListItem.setAttribute("id", "payment"+numberOfReciepts);
-             numberOfReciepts++
-
-
+             //getting all the data for the table items
              //create the title element
-             let titleArea = document.createElement("h3")
-             titleArea.setAttribute("id", "title");
              let title = document.getElementById("who-from").value;
              let titleText = document.createTextNode(title);
-             titleArea.appendChild(titleText);
-             newListItem.appendChild(titleArea);
-             console.log(title);
-
-
-             //create the element for what it is for
-             let descriptionArea = document.createElement("p");
-             descriptionArea.setAttribute("id", "description");
+             
+            //create the element for what it is for
              let description = document.getElementById("what-for").value;
              let descriptionText = document.createTextNode(description);
-             descriptionArea.appendChild(descriptionText);
-             newListItem.appendChild(descriptionArea);
-             console.log(description);
-
+            
              //create the element for the amount paid
-            let amountArea = document.createElement("h5");
-            amountArea.setAttribute("id", "amount");
             let amount = document.getElementById("how-much").value;
             let amountText = document.createTextNode(amount);
-            amountArea.appendChild(amountText);
-            newListItem.appendChild(amountArea);
-            console.log(amount);
 
             if(value === "income") {
-                newListItem.setAttribute("class", "income-display display-card");
-                let incomeArea = document.getElementById("incoming");
-                incomeArea.appendChild(newListItem);
-                console.log("red");
+                let incomeTable = document.getElementById("income-table");
+                let row = incomeTable.insertRow(-1);
+                let whoCell = row.insertCell(0);
+                let whyCell = row.insertCell(1);
+                let howMuchCell = row.insertCell(2);
+
+                whoCell.innerHTML = title;
+                whyCell.innerHTML = description;
+                howMuchCell.innerHTML = amount;
 
                 //update the current balance
                 let addingAmount = parseInt(amount);
