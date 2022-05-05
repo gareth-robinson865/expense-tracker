@@ -12,4 +12,7 @@ body {
     display: grid;
     padding: 0;
     margin: 0;
+    border-radius: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: .25fr .75fr .25fr 2fr;
 }
