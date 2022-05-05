@@ -50,6 +50,7 @@ const createPayment = (ev) => {
             console.log(amount);
 
             if(value === "income") {
+                newListItem.setAttribute("class", "income-display");
                 let incomeArea = document.getElementById("incoming");
                 incomeArea.appendChild(newListItem);
                 console.log("red");
@@ -59,6 +60,7 @@ const createPayment = (ev) => {
                 let additionBalance = startingBalance += addingAmount;
                 currentBalance.innerText = additionBalance;
             } else {
+                newListItem.setAttribute("class", "outgoing-display");
                 let expenditureArea = document.getElementById("outgoing");
                 expenditureArea.appendChild(newListItem);
                 console.log("blue");
