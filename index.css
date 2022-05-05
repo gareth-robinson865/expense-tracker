@@ -47,3 +47,10 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: .25fr 1.75fr;
 }
+
+#income-display {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: center;
+}
